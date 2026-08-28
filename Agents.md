@@ -24,7 +24,7 @@
 
 ## Skills
 
-Use this file for workflow/process rules. Use the relevant `skills/<name>/SKILL.md` for domain-specific technique — check its `description` frontmatter, but as a quick directory:
+Use this file for workflow/process rules. Use the relevant `.agents/skills/<name>/SKILL.md` for domain-specific technique — check its `description` frontmatter, but as a quick directory:
 
 | Skill | Use when |
 |---|---|
