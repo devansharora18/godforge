@@ -37,12 +37,6 @@ curl -fsSL https://raw.githubusercontent.com/devansharora18/godforge/main/instal
 
 **Update:** re-run the same command — it overwrites with the latest version.
 
-**Private repo?** `curl` needs public access. If you've forked this privately, clone instead (uses your stored GitHub credentials):
-
-```bash
-tmp=$(mktemp -d) && git clone --depth 1 https://github.com/devansharora18/godforge.git $tmp && cp $tmp/AGENTS.md ./AGENTS.md && cp $tmp/AGENTS.md ./Agents.md && mkdir -p ./.agents/skills && cp -r $tmp/.agents/skills/. ./.agents/skills/ && rm -rf $tmp && echo "✓ godforge installed"
-```
-
 ## How the gods are summoned
 
 Skills live at `.agents/skills/<name>/SKILL.md` — also mirrored at `.opencode/skills/` and `.claude/skills/` for tool-specific discovery. `.agents/` is the agent-compat path OpenCode walks up the git worktree to find.
