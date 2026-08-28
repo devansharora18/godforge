@@ -24,5 +24,16 @@
 
 ## Skills
 
-- Skill directories under `skills/` (architecture, frontend, backend, ui-ux, testing, devops, docs) hold the detailed how-to for each domain.
-- Use this file for workflow/process rules; use the relevant `SKILL.md` for domain-specific technique.
+Use this file for workflow/process rules. Use the relevant `skills/<name>/SKILL.md` for domain-specific technique — check its `description` frontmatter, but as a quick directory:
+
+| Skill | Use when |
+|---|---|
+| `architecture` | Starting a new project/module, or restructuring — folder structure, layering, file-size discipline. |
+| `ui-ux` | Designing or reviewing any UI — visual direction (Vercel-style minimalism), typography, spacing, color tokens, states, accessibility. |
+| `frontend` | Writing frontend code — Vite/Next.js, TypeScript, Tailwind, component/state conventions. Implements `ui-ux` decisions. |
+| `backend` | Writing server/API/DB code — stack evaluation (don't default to a managed BaaS), Postgres + FastAPI conventions, security. |
+| `docs` | User wants documentation — informal (understanding) or formal (backend docs, architecture docs). Write Markdown first. |
+| `pdf` | Generating a PDF from scratch in Python. Not for reading/merging PDFs. Formal docs go `docs` → `pdf`, in that order. |
+| `snap` | **Only** on the literal `/snap` slash command. Suspends the incremental/approval workflow below for one task; standards (security, code quality) still apply. |
+
+Apply skills together when a task spans domains (e.g. a new feature touches `architecture` + `frontend` + `backend`) rather than picking just one.
