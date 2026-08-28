@@ -25,12 +25,12 @@ elif curl -fsSL "https://github.com/$REPO/archive/refs/heads/$BRANCH.tar.gz" 2>/
 else
   # fallback for local testing / offline: copy from script location if available
   SCRIPT_DIR="$(cd "$(dirname "$0")" 2>/dev/null && pwd)"
-  if [ -f "$SCRIPT_DIR/Agents.md" ]; then
-    cp -f "$SCRIPT_DIR/Agents.md" "$TMPDIR/Agents.md"
+  if [ -f "$SCRIPT_DIR/AGENTS.md" ]; then
+    cp -f "$SCRIPT_DIR/AGENTS.md" "$TMPDIR/AGENTS.md"
     mkdir -p "$TMPDIR/.agents/skills"
     cp -r "$SCRIPT_DIR/.agents/skills/." "$TMPDIR/.agents/skills/"
-  elif [ -f "$SCRIPT_DIR/AGENTS.md" ]; then
-    cp -f "$SCRIPT_DIR/AGENTS.md" "$TMPDIR/Agents.md"
+  elif [ -f "$SCRIPT_DIR/Agents.md" ]; then
+    cp -f "$SCRIPT_DIR/Agents.md" "$TMPDIR/AGENTS.md"
     mkdir -p "$TMPDIR/.agents/skills"
     cp -r "$SCRIPT_DIR/.agents/skills/." "$TMPDIR/.agents/skills/"
   else
@@ -42,13 +42,14 @@ fi
 SRC="$TMPDIR"
 
 echo "→ installing to $TARGET…"
-# Support both old (Agents.md) and new source layouts
+# Support both old (Agents.md) and new source layouts as input, but always install as AGENTS.md (canonical)
 SRC_AGENTS=""
 if [ -f "$SRC/AGENTS.md" ]; then SRC_AGENTS="$SRC/AGENTS.md"
 elif [ -f "$SRC/Agents.md" ]; then SRC_AGENTS="$SRC/Agents.md"
 fi
 cp -f "$SRC_AGENTS" "$TARGET/AGENTS.md"
-cp -f "$SRC_AGENTS" "$TARGET/Agents.md"
+# Remove legacy duplicate if it exists from an older install
+rm -f "$TARGET/Agents.md"
 
 # Detect skills source (new: .agents/skills, legacy: skills)
 SRC_SKILLS=""
