@@ -12,6 +12,7 @@ description: Use when designing or reviewing any UI — new screens, components,
 - Sharp, confident typography does the work most decoration would — don't reach for gradients, shadows, or icons to fill empty space.
 - Borders over shadows for separation; use shadow only for true elevation (modals, popovers, dropdowns).
 - Motion is subtle and fast (150–250ms), used to clarify state change, never as decoration.
+- **Never use emojis in UI.** Use proper vector icons (SVG / icon library like Lucide `lucide-react`) with consistent stroke width, size, and optical alignment. Emojis are not a substitute for icons — they break visual consistency, accessibility, and cross-platform rendering.
 
 ## Typography
 
@@ -52,9 +53,17 @@ description: Use when designing or reviewing any UI — new screens, components,
 - All interactive elements reachable and operable by keyboard alone, in a logical tab order.
 - Images have meaningful `alt` text (or `alt=""` if purely decorative).
 
+## Iconography
+
+- Use a single icon set (e.g. Lucide) for the entire product — do not mix emoji, custom hand-drawn, and icon-library styles.
+- Icons are outline (stroke-based), 1.5–2px stroke, 16–20px default size. Fill only for active/selected states.
+- Every icon has an accessible name (`aria-label` or `aria-hidden` + adjacent text). Decorative icons are `aria-hidden="true"`.
+- Do not use emojis for status, decoration, or illustration. If an emoji appears in a design, replace it with the nearest semantic vector icon.
+
 ## Review checklist before calling a screen done
 
 - Does it work at the smallest supported viewport?
 - Do all 4 states exist (default/loading/empty/error)?
 - Is every interactive element keyboard-accessible with a visible focus state?
 - Could any element be removed without losing meaning? If yes, remove it.
+- Are there zero emojis in the UI? Are all icons proper SVGs from a single set?
