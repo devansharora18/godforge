@@ -13,6 +13,7 @@
   - returns 401 on missing/expired token
   ```
 - If a step turns out to be bigger than expected, split it further and say so instead of pushing through.
+- **`/snap` is one-shot and non-sticky:** it applies only when the current message literally starts with `/snap` and expires immediately after that task. The next prompt reverts to this incremental process unless it also starts with `/snap`.
 
 ## Code
 
@@ -34,6 +35,6 @@ Use this file for workflow/process rules. Use the relevant `.agents/skills/<name
 | `backend` | Writing server/API/DB code — stack evaluation (don't default to a managed BaaS), Postgres + FastAPI conventions, security. |
 | `docs` | User wants documentation — informal (understanding) or formal (backend docs, architecture docs). Write Markdown first. |
 | `pdf` | Generating a PDF from scratch in Python. Not for reading/merging PDFs. Formal docs go `docs` → `pdf`, in that order. |
-| `snap` | **Only** on the literal `/snap` slash command. Suspends the incremental/approval workflow below for one task; standards (security, code quality) still apply. |
+| `snap` | **Only** when the *current* message starts with literal `/snap`. One-shot, non-sticky — never carries to the next prompt. Suspends the incremental workflow for one task only; standards still apply. |
 
 Apply skills together when a task spans domains (e.g. a new feature touches `architecture` + `frontend` + `backend`) rather than picking just one.
