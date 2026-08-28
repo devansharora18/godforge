@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { font-variant-ligatures: common-ligatures; }
+::selection { background: #111; color: #fff; }
+html { scroll-behavior: smooth; }
