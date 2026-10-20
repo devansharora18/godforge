@@ -5,22 +5,25 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'ui-sans-system', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
-        mono: ['Geist Mono', 'JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+        serif: ['"Instrument Serif"', 'Georgia', 'Times New Roman', 'serif'],
+        sans: ['"Instrument Sans"', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },
       colors: {
-        border: 'hsl(240 5.9% 90%)',
-        muted: 'hsl(240 4.8% 95.9%)',
-        'muted-foreground': 'hsl(240 3.8% 46.1%)',
+        paper: 'rgb(var(--paper) / <alpha-value>)',
+        raise: 'rgb(var(--raise) / <alpha-value>)',
+        ink: 'rgb(var(--ink) / <alpha-value>)',
+        soft: 'rgb(var(--soft) / <alpha-value>)',
+        rule: 'rgb(var(--rule) / <alpha-value>)',
+        ember: 'rgb(var(--ember) / <alpha-value>)',
+        term: 'rgb(var(--term) / <alpha-value>)',
+        'term-fg': 'rgb(var(--term-fg) / <alpha-value>)',
       },
-      keyframes: {
-        'in': {
-          '0%': { opacity: '0', transform: 'translateY(4px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
+      maxWidth: {
+        page: '1240px',
       },
-      animation: {
-        in: 'in 0.5s ease-out both',
+      letterSpacing: {
+        label: '0.18em',
       },
     },
   },

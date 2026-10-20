@@ -1,1 +1,1 @@
-{"root":["./src/App.tsx","./src/main.tsx","./src/components/ThemeToggle.tsx"],"version":"5.9.3"}
+{"root":["./src/App.tsx","./src/main.tsx","./src/components/Close.tsx","./src/components/CommandBlock.tsx","./src/components/Law.tsx","./src/components/Pantheon.tsx","./src/components/Rite.tsx","./src/components/ThemeToggle.tsx","./src/components/icons.tsx","./src/data/content.ts","./src/lib/constants.ts","./src/lib/motion.ts"],"version":"5.9.3"}
