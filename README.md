@@ -64,6 +64,17 @@ The agent lists available skills via the `skill` tool, matches the task against 
 - **Security is not optional** — baked into `backend` by default, not bolted on after the fact.
 - **`/snap` is a last resort, not a habit** — when you know exactly what you want and the ceremony is just friction, one word skips the process without skipping the standards. Use it sparingly; half of all process is not a good average.
 
+## The site
+
+The landing page lives in `site/` (Vite, React, Tailwind, GSAP). It lists the whole library from `site/src/data/content.ts`.
+
+```bash
+cd site
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # type check + production bundle
+```
+
 ## Join the forge
 
 Skills are just Markdown — no framework, no build step. Fork it, edit or add a `SKILL.md`, open a PR. Keep descriptions specific; that's the only thing standing between your skill and an agent that never calls it.
