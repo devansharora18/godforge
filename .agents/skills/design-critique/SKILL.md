@@ -1,6 +1,6 @@
 ---
 name: design-critique
-description: Use to review a screenshot or live URL and return a prioritized fix list — hierarchy, typography, spacing, color, states, accessibility. Critique only, not implementation. Not for extracting tokens (use design-system) or viewport breakage (use responsive-audit).
+description: Use to review a screenshot or live URL and return a prioritized fix list — hierarchy, typography, spacing, color, states, accessibility. Critique only, not implementation. Not for choosing the visual direction (use ui-ux), extracting tokens (use design-system), or viewport breakage (use responsive-audit).
 ---
 
 # Design critique
