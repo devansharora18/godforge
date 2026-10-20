@@ -36,5 +36,6 @@ Use this file for workflow/process rules. Use the relevant `.agents/skills/<name
 | `docs` | User wants documentation — informal (understanding) or formal (backend docs, architecture docs). Write Markdown first. |
 | `pdf` | Generating a PDF from scratch in Python. Not for reading/merging PDFs. Formal docs go `docs` → `pdf`, in that order. |
 | `snap` | **Only** when the *current* message starts with literal `/snap`. One-shot, non-sticky — never carries to the next prompt. Suspends the incremental workflow for one task only; standards still apply. |
+| `autopilot` | **Only** when the *current* message starts with literal `/autopilot`. One-shot, non-sticky — never carries to the next prompt. Finishes the task end to end with no check-ins: recon, build, tests, hardening, docs, one commit per change. Suspends the incremental workflow for one task only; the `Code` rules and other skills still apply. |
 
-Apply skills together when a task spans domains (e.g. a new feature touches `architecture` + `frontend` + `backend`) rather than picking just one.
+Apply skills together when a task spans domains (e.g. a new feature touches `architecture` + `frontend` + `backend`) rather than picking just one. Under `/autopilot`, apply the domain skills the same way inside its steps.
