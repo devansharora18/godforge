@@ -7,6 +7,7 @@ import { Rite } from './components/Rite'
 import { Close } from './components/Close'
 import { ArrowDown, ArrowUpRight, Sigil } from './components/icons'
 import { INSTALL_CMD, REPO } from './lib/constants'
+import { skills } from './data/content'
 
 export default function App() {
   const { theme, toggle } = useTheme()
@@ -65,7 +66,7 @@ export default function App() {
                 <span className="text-ember">§ 01</span>
                 <span>The law and the will</span>
                 <span aria-hidden="true" className="hidden h-px w-8 bg-rule sm:block" />
-                <span className="hidden sm:inline">AGENTS.md · 7 skills</span>
+                <span className="hidden sm:inline">AGENTS.md · {skills.length} skills</span>
               </p>
 
               <h1
@@ -74,7 +75,7 @@ export default function App() {
               >
                 One file writes <span className="whitespace-nowrap">the commandments.</span>
                 <span className="mt-2 block italic text-soft">
-                  Seven skills <span className="whitespace-nowrap">carry out the will.</span>
+                  Every skill <span className="whitespace-nowrap">carries out the will.</span>
                 </span>
               </h1>
 
@@ -109,7 +110,7 @@ export default function App() {
                   href="#pantheon"
                   className="inline-flex items-center gap-1.5 text-soft transition-colors hover:text-ink"
                 >
-                  Meet the seven <ArrowDown className="h-3.5 w-3.5" />
+                  Meet the pantheon <ArrowDown className="h-3.5 w-3.5" />
                 </a>
               </div>
             </div>
@@ -131,7 +132,7 @@ export default function App() {
                   {'    install.sh | bash\n\n'}
                   <span className="text-term-fg/60">{'→ fetching godforge…\n→ installing to .…\n\n'}</span>
                   <span className="text-ember">{'✓'}</span>{' installed AGENTS.md + .agents/skills/\n'}
-                  {'  (7 skills)\n\n'}
+                  {`  (${skills.length} skills)\n\n`}
                   <span className="text-term-fg/60">{'  ./AGENTS.md\n  ./.agents/skills/\n'}</span>
                 </pre>
               </div>
@@ -139,7 +140,7 @@ export default function App() {
               <dl className="mt-4 grid grid-cols-3 divide-x divide-rule border-y border-rule">
                 {[
                   ['1', 'the law'],
-                  ['7', 'the will'],
+                  [String(skills.length), 'the will'],
                   ['0', 'dependencies'],
                 ].map(([value, caption]) => (
                   <div key={caption} className="px-3 py-3 first:pl-0">
