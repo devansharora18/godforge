@@ -1,6 +1,6 @@
 ---
 name: design-critique
-description: Use to review a screenshot or live URL and return a prioritized fix list — hierarchy, typography, spacing, color, states, accessibility. Critique only, not implementation. Not for choosing the visual direction (use ui-ux), extracting tokens (use design-system), or viewport breakage (use responsive-audit).
+description: Use to review a screenshot or live URL and return a prioritized fix list — hierarchy, typography, spacing, color, states, accessibility. Critique only, not implementation. Ships per-surface checklists and an evidence protocol. Not for choosing the visual direction (use ui-ux), extracting tokens (use design-system), or viewport breakage (use responsive-audit).
 ---
 
 # Design critique
@@ -9,22 +9,36 @@ Judge the screen against its job, not against taste.
 
 ## 1. Name the job
 
-Before looking: what is the one action this screen drives, and for whom? Without that, "better" is meaningless.
+Before looking: what is the one action this screen drives, and for whom? Write it in one line. Without it, "better" means "different".
 
-## 2. Look in this order
+## 2. Gather evidence
 
-1. **Hierarchy** — squint. Can you see the purpose and the primary action in two seconds? If three things compete, that is finding #1.
-2. **Type** — is there a real scale (five or six sizes) or seven near-identical ones? Is body copy 45–75 characters? Are headings tracked tight and leaded 1.1–1.3?
-3. **Spacing** — is it on a 4 or 8 scale, and does related content sit closer than unrelated content? Uneven section rhythm is the usual culprit.
-4. **Color** — one accent used sparingly, semantic tokens, AA contrast (4.5:1 body, 3:1 large and UI). Check it, don't eyeball it.
-5. **States** — default, hover, focus, active, disabled, loading, empty, error. A missing empty or error state is a blocker.
-6. **Accessibility** — keyboard order, visible focus, labels bound to inputs, alt text, reduced motion.
+- 360, 768, 1440 — full page and the fold.
+- Both themes if both exist.
+- Default, loading, empty, error.
+- Hover, focus, and disabled where you can capture them.
 
-## 3. Evidence
+Capture protocol and citation format: `reference/evidence.md`.
 
-Screenshot at 360, 768, and 1440. Crop the actual problem area. Cite values, not adjectives: "16px gap between label and input, 40px to the next group" beats "spacing feels off".
+## 3. Review in order
 
-## 4. Output
+| File | Open when |
+|---|---|
+| `reference/evidence.md` | Before the first screenshot. |
+| `reference/surfaces.md` | **Always**. The checklist for this type of screen. |
+| `reference/hierarchy.md` | The screen feels flat, busy, or "fine but forgettable". |
+| `reference/interaction.md` | Forms, checkout, destructive actions, async work. |
+
+## 4. Severity
+
+| Level | Meaning | Action |
+|---|---|---|
+| Blocker | the primary action is unreachable, invisible, or ambiguous | fix before ship |
+| High | wrong hierarchy, missing state, failing contrast | fix now |
+| Medium | spacing, inconsistency, weak affordance | fix or ticket |
+| Keep | what works and must survive the fix | state it explicitly |
+
+## 5. Output
 
 ```
 Verdict: ship | fix first
@@ -34,16 +48,16 @@ Blocker
    Fix: one filled button; the other becomes a text link.
 
 High
-2. [Hero] Body copy runs 92ch at 1440 — cap at 65ch.
+2. [Hero @1440] Body runs 92ch — cap at 65ch.
 
 Keep
-- The monochrome palette and single ember accent work; do not add a third color.
+- The monochrome palette and single accent work; do not add a third color.
 ```
-
-Always include what works and must survive the fix. A critique that only subtracts produces beige.
 
 ## Rules
 
 - No redesign proposals. Point at the defect and the smallest fix.
+- Cite values, not adjectives: "16px label gap, 40px to the next group", not "spacing feels off".
 - Do not critique copy tone unless asked; flag factual or UX copy problems only.
 - If the screenshot is too small to judge, ask for a crop instead of inventing findings.
+- One finding per line. Five real findings beat twenty observations.
