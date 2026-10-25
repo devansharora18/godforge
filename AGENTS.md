@@ -27,6 +27,8 @@
 
 Use this file for workflow/process rules. Use the relevant `.agents/skills/<name>/SKILL.md` for domain-specific technique — check its `description` frontmatter, but as a quick directory:
 
+A skill may ship a `reference/` folder. `SKILL.md` is the router: open only the reference files its table names for the task at hand. External skills cited in a reference (for example `impeccable` or an Apple HIG skill) are optional — every local skill must work with none of them installed.
+
 ### Modes
 
 | Skill | Use when |

@@ -54,6 +54,8 @@ description: ...     # 1–1024 chars — this is what the agent matches against
 
 The agent lists available skills via the `skill` tool, matches the task against each `description`, and calls `skill({ name })` to load the full `SKILL.md` on demand — so the skill's detail doesn't bloat context until it's actually relevant.
 
+Skills can ship a `reference/` folder for detail that is only worth loading after the skill is chosen. `ui-ux`, for example, uses this to keep one skill from producing one look: `SKILL.md` routes to a direction selector, 11 directions, 12 named layout skeletons, typography and color rules, an anti-pattern list, and an audit. It also cross-references `impeccable` and Apple HIG / taste skills as optional polish — never as a dependency.
+
 `AGENTS.md` holds the process/code rules and a table of which skill to use when — see the **Skills** section in `AGENTS.md` for the full directory, grouped by domain. Skills are meant to be combined: a feature that touches architecture, frontend, and backend should pull from all three.
 
 ## Commandments

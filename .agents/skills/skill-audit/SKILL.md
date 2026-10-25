@@ -32,6 +32,17 @@ Look for rules that can both fire and disagree: commit versus autopilot, review 
 - Process the model already follows by default: delete.
 - Anything project-specific that belongs in AGENTS.md, not a portable skill.
 
+## 5. Reference folders
+
+A skill may ship `reference/*.md`. The SKILL.md must stay the router.
+
+- Every reference file is named in SKILL.md (or in another reference) with the condition for opening it. Orphans get linked or deleted.
+- Frontmatter lives only in SKILL.md. References are plain Markdown.
+- Budget: SKILL.md ≤ 150 lines, each reference 40–120, total per skill ≈ 1,200.
+- One rule has one owner. If SKILL.md and a reference both state it, delete the copy.
+- An external skill (impeccable, Apple HIG, a taste skill) is cited as optional, with a local fallback. The skill must work with none of them installed.
+- References describe technique, not project specifics. No secrets, no client names, no dates that rot.
+
 ## 5. Description quality
 
 Bad: "Helps with testing."
@@ -48,6 +59,10 @@ Collisions
 
 Trim
 - <skill>: lines 40-88 duplicate <other>; remove.
+
+References
+- <skill>: reference/orphan.md is linked from nowhere.
+- <skill>: SKILL.md is 240 lines; move sections 3-5 to reference/.
 
 Missing
 - No skill covers <gap>; prompts about it currently hit <wrong skill>.
