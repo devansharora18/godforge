@@ -21,13 +21,13 @@ export const skills: Skill[] = [
   {
     name: 'backend',
     group: 'Core',
-    summary: 'Stack evaluation, Postgres + FastAPI, auth, jobs.',
+    summary: 'Stack matrix, auth, reliability, FastAPI.',
     summoned: 'Designing APIs, schema, authentication, background work, or infra choices.',
   },
   {
     name: 'ui-ux',
     group: 'Core',
-    summary: 'Visual direction, typography, states, accessibility.',
+    summary: 'Direction library, type, color, anti-patterns.',
     summoned: 'Designing or reviewing a screen, a component, or a polish pass.',
   },
   {
@@ -45,7 +45,7 @@ export const skills: Skill[] = [
   {
     name: 'review',
     group: 'Review',
-    summary: 'Diff review by severity: bugs, security, tests.',
+    summary: 'Diff review with security and test checklists.',
     summoned: 'A branch or pull request is about to merge.',
   },
   {
@@ -183,13 +183,13 @@ export const skills: Skill[] = [
   {
     name: 'design-critique',
     group: 'Design',
-    summary: 'Prioritized fixes for a screenshot or URL.',
+    summary: 'Per-surface checklists, prioritized fixes.',
     summoned: 'A screen is done and needs a hard look.',
   },
   {
     name: 'motion',
     group: 'Design',
-    summary: 'GSAP, ScrollTrigger, reduced motion, cleanup.',
+    summary: 'GSAP recipes keyed to the chosen direction.',
     summoned: 'The page needs to move.',
   },
   {
