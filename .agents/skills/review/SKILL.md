@@ -7,6 +7,14 @@ description: Use when asked to review a diff, branch, or pull request before mer
 
 Review the change, not the codebase. Every finding must be caused by this diff or make this diff unsafe.
 
+## Reference
+
+| File | Open when |
+|---|---|
+| `reference/security.md` | The diff touches auth, user input, files, URLs, SQL, crypto, logs, or data access. |
+| `reference/tests.md` | Tests are added, changed, or conspicuously absent. |
+| `reference/change-types.md` | You need the checklist for an API route, migration, UI change, config, or dependency bump. |
+
 ## 1. Establish the base
 
 ```bash
