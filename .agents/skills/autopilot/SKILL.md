@@ -1,6 +1,6 @@
 ---
 name: autopilot
-description: Use when the user wants a task finished end to end with no check-ins: build, fix, refactor, or ship a feature or whole project. Works autonomously through recon, build, tests, hardening and docs, committing after every change, and stops only when the definition of done is met.
+description: Only load this when the CURRENT message literally starts with "/autopilot". Then finish the task end to end with no check-ins: recon, build, tests, hardening, docs, one commit per change. Never infer it from "finish this", a large task, urgency, or a request for autonomy that lacks the slash prefix.
 ---
 
 # Autopilot

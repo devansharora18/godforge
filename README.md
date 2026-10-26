@@ -57,7 +57,9 @@ The agent lists available skills via the `skill` tool, matches the task against 
 
 Skills can ship a `reference/` folder for detail that is only worth loading after the skill is chosen. `ui-ux` is the largest: a direction selector, 11 directions, 12 named layout skeletons, typography and color rules, an anti-pattern list, and an audit. `motion` maps those directions to motion signatures and ships GSAP / ScrollTrigger / Lenis recipes. `design-critique` adds per-surface checklists, `review` adds security, test-smell, and change-type checklists, and `backend` adds a stack matrix, auth, reliability, and FastAPI/Postgres references. External skills such as `impeccable` and Apple HIG / taste skills are cited as optional polish — never a dependency.
 
-`AGENTS.md` holds the process/code rules and a table of which skill to use when — see the **Skills** section in `AGENTS.md` for the full directory, grouped by domain. Skills are meant to be combined: a feature that touches architecture, frontend, and backend should pull from all three.
+`AGENTS.md` holds the process/code rules, a mandatory routing table, and a `Skills:` line the agent must state before it starts. The table maps task language to skills, so the agent loads one to four of them instead of working from memory. Skills are meant to be combined: a feature that touches architecture, frontend, and backend should pull from all three.
+
+`snap` and `autopilot` are trigger-only: their descriptions require the message to literally start with `/snap` or `/autopilot`, so an ordinary task cannot invoke them.
 
 ## Commandments
 

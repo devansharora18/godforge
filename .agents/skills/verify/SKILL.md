@@ -37,6 +37,10 @@ Not verified: email delivery (no SMTP in this environment)
 
 Name what you did **not** verify. Silence about a gap reads as a pass.
 
+## Skill check
+
+Compare the `Skills:` line in the response with the `skill` calls you actually made. A skill named but not loaded is a lie; a relevant skill that was never named is the routing failure AGENTS.md exists to prevent. Load it before the final report, or say why it did not apply.
+
 ## Rules
 
 - Do not paste output you did not run.

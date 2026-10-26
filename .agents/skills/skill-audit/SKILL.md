@@ -43,13 +43,23 @@ A skill may ship `reference/*.md`. The SKILL.md must stay the router.
 - An external skill (impeccable, Apple HIG, a taste skill) is cited as optional, with a local fallback. The skill must work with none of them installed.
 - References describe technique, not project specifics. No secrets, no client names, no dates that rot.
 
+## 6. Routing coverage
+
+The routing table in `AGENTS.md` is the discovery layer. Check it against the folders:
+
+- Every skill except `snap` and `autopilot` has exactly one row.
+- Every row names a folder that exists and is not a mode.
+- Triggers are concrete task language, not categories ("a bug with an unknown cause", not "debugging").
+- `snap` and `autopilot` are trigger-only: the description names the literal prefix, and neither appears as an automatic route.
+- Adding a skill means adding a row in the same commit.
+
 ## 5. Description quality
 
 Bad: "Helps with testing."
 
 Good: "Use when an app needs to be exercised end to end — run it, click the main flows, log bugs, fix them, add regression tests. Not a code review (use review)."
 
-## 6. Output
+## 7. Output
 
 ```
 Verdict per skill: keep | trim | merge into <x> | rewrite description | delete

@@ -1,7 +1,69 @@
 # AGENTS.md
 
+## Skill routing (do this first)
+
+Skills are not optional reading. Before planning, editing, or building, route the task and load the matching skills with the `skill` tool. Announce them on the first line of the response:
+
+```
+Skills: ui-ux, frontend, verify
+```
+
+- Load one to four skills. More than four means the task is too broad — split it.
+- If nothing matches, write `Skills: none — <reason>` and continue. Do not silently skip.
+- If you discover mid-task that a skill applies, load it before the next edit and say so.
+- Never claim a skill was used unless its body was loaded with the tool.
+- After loading a skill, follow its `reference/` router for detail.
+
+`snap` and `autopilot` are trigger-only. Their descriptions require the current message to literally start with `/snap` or `/autopilot`. Never load them from tone, urgency, "be autonomous", "finish this", or a large task, and never carry the trigger into a later turn.
+
+### Routing table
+
+| If the task involves… | Load |
+|---|---|
+| a new project, module, or file layout | `architecture` |
+| UI, layout, landing page, visual polish | `ui-ux` (+ `motion` if it moves) |
+| frontend components, routing, state, styling | `frontend` |
+| server, API, auth, jobs, infra | `backend` |
+| schema, indexes, migrations | `db-design` (+ `spec` if public) |
+| an endpoint before merge | `api-review` |
+| a diff, branch, or PR | `review` |
+| a bug with an unknown cause | `investigate` |
+| exercising the running app | `qa` |
+| proving work is done | `verify` |
+| a plan, before code | `plan-review` |
+| scope too large for the time | `scope-cut` |
+| a one-liner to turn into a spec | `prd` |
+| a contract or schema to freeze | `spec` |
+| three to five competitors | `competitor-teardown` |
+| an expensive-to-reverse decision | `adr` |
+| a whole site after changes | `critique` |
+| one screen's visual hierarchy | `design-critique` |
+| 360 / 768 / 1440 behaviour | `responsive-audit` |
+| token and component drift | `design-system` |
+| titles, OG, sitemap, metadata | `seo-meta` |
+| docs, README, guides | `docs` (+ `asd-ste100` for procedures) |
+| errors or UI copy that must not be misread | `asd-ste100` |
+| a reader who wants the answer fast | `adhd` |
+| literal, predictable communication | `asd` |
+| commits | `commit` |
+| a PR body | `pr-describe` |
+| release notes | `release-notes` |
+| destructive commands or unattended work | `guard` |
+| deploy, migration, backfill | `rollback` |
+| behaviour-preserving cleanup | `refactor` |
+| unused files, exports, dependencies | `dead-code` |
+| a new or edited skill | `skill-audit` |
+| session end or takeover | `handoff` (+ `memory-notes`) |
+| teaching what was built | `explain` |
+| cloud spend | `cost` |
+| metrics, alerts, dashboards | `observability` |
+| a PDF from scratch | `pdf` |
+| a throwaway prototype | `scratch` |
+| a cold read of a decision | `second-opinion` |
+
 ## Process
 
+- **Route first.** Load the skills from the routing table before step 1, and state them in the `Skills:` line.
 - Default to **agile**: short iterate-and-adjust loops, for ~90% of work (85% is also fine — err toward this whenever requirements might shift).
 - Use **waterfall** (requirements → design → implementation → test → review, in order, no skipping ahead) only for the ~10–15% of work that is well-defined upfront and benefits from locking scope before touching code — e.g. schema/migration changes, public API contracts, security-sensitive flows. State explicitly when switching modes and why.
 - **No big-bang changes.** Every task is broken into the smallest reasonable steps (roughly 5–10% of the total work per step).
