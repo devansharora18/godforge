@@ -56,6 +56,15 @@ A skill may ship a `reference/` folder. `SKILL.md` is the router: open only the 
 | `qa` | Exercising the running app end to end — click the flows, log bugs, fix, add tests. |
 | `verify` | Proving a finished change works with commands and real output. Never "done" from reading code. |
 | `second-opinion` | A plan or diff is expensive to get wrong and needs a cold read from a fresh agent. |
+| `critique` | A site change shipped — review the whole website (content, links, metadata, flow) and fix what is broken. |
+
+### Communication
+
+| Skill | Use when |
+|---|---|
+| `adhd` | The reader wants the result without preamble — answer first, short chunks, one next action. |
+| `asd` | Clarity and predictability matter — literal language, explicit assumptions, predictable product content. |
+| `asd-ste100` | Documentation, errors, or UI copy must not be misread — ASD-STE100 controlled English. |
 
 ### Planning
 

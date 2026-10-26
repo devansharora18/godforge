@@ -73,6 +73,12 @@ export const skills: Skill[] = [
     summoned: 'The decision is expensive to get wrong.',
   },
   {
+    name: 'critique',
+    group: 'Review',
+    summary: 'Whole-site review after changes, then fixes.',
+    summoned: 'A site change shipped and needs a full pass: content, links, metadata, flow.',
+  },
+  {
     name: 'plan-review',
     group: 'Planning',
     summary: 'Challenge scope, failure modes, and test coverage.',
@@ -233,6 +239,24 @@ export const skills: Skill[] = [
     group: 'Teaching',
     summary: 'What was built, taught at the user level.',
     summoned: 'The user wants to understand, not just run it.',
+  },
+  {
+    name: 'adhd',
+    group: 'Communication',
+    summary: 'Answer first, short chunks, one next action.',
+    summoned: 'The reader wants the result without preamble.',
+  },
+  {
+    name: 'asd',
+    group: 'Communication',
+    summary: 'Literal language, explicit assumptions, predictable flows.',
+    summoned: 'Ambiguity or surprise would cost the reader.',
+  },
+  {
+    name: 'asd-ste100',
+    group: 'Communication',
+    summary: 'Controlled technical English for docs and errors.',
+    summoned: 'Text must not be misread — docs, errors, procedures.',
   },
   {
     name: 'snap',

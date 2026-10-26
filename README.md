@@ -1,23 +1,24 @@
 # GodForge
 
-Opinionated workflow + skills for AI-assisted development. Drop it into a repo and your coding agent stops improvising — it inherits a process (agile-first, incremental, security-conscious) and forty domain skills it summons on demand, instead of guessing at conventions from vibes.
+Opinionated workflow + skills for AI-assisted development. Drop it into a repo and your coding agent stops improvising — it inherits a process (agile-first, incremental, security-conscious) and forty-four domain skills it summons on demand, instead of guessing at conventions from vibes.
 
-One file writes the commandments. Forty skills carry out the will.
+One file writes the commandments. Every skill carries out the will.
 
 ## The pantheon
 
 - **`AGENTS.md`** — the law. Agile by default (waterfall only for well-defined, lock-scope-first work), incremental changes only, approval requested after each step, minimal code, no filler comments.
-- **`.agents/skills/`** — forty lesser gods, grouped by the work they cover, each summoned only when the task calls for their domain:
+- **`.agents/skills/`** — forty-four lesser gods, grouped by the work they cover, each summoned only when the task calls for their domain:
 
   | Group | Skills |
   |---|---|
   | Core | `architecture` `frontend` `backend` `ui-ux` `docs` `pdf` |
-  | Review and verification | `review` `investigate` `qa` `verify` `second-opinion` |
+  | Review and verification | `review` `investigate` `qa` `verify` `second-opinion` `critique` |
   | Planning | `plan-review` `scope-cut` `prd` `spec` `competitor-teardown` `adr` |
   | Workflow and safety | `guard` `commit` `pr-describe` `release-notes` `rollback` `handoff` `memory-notes` `scratch` |
   | Hygiene | `refactor` `dead-code` `skill-audit` |
   | Frontend and design | `design-system` `design-critique` `motion` `seo-meta` `responsive-audit` |
   | Backend and data | `db-design` `api-review` `cost` `observability` |
+  | Communication | `adhd` `asd` `asd-ste100` |
   | Teaching | `explain` |
   | Modes | `snap` (`/snap`) · `autopilot` (`/autopilot`) |
 
@@ -29,7 +30,7 @@ One line, from any repo root:
 curl -fsSL https://raw.githubusercontent.com/devansharora18/godforge/main/install.sh | bash
 ```
 
-This copies `AGENTS.md` and `.agents/skills/` (all 40 skills) into the current directory.
+This copies `AGENTS.md` and `.agents/skills/` (every skill) into the current directory.
 
 **Install to a specific path:**
 
