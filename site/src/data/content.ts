@@ -27,7 +27,7 @@ export const skills: Skill[] = [
   {
     name: 'ui-ux',
     group: 'Core',
-    summary: 'Direction library, type, color, anti-patterns.',
+    summary: 'Fifty themes, layout skeletons, type, color, tiered audit.',
     summoned: 'Designing or reviewing a screen, a component, or a polish pass.',
   },
   {
