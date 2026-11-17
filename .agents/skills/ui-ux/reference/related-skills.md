@@ -29,7 +29,7 @@ May arrive as `apple-design`, `apple-uiux-taste`, `design-taste`, or a vendored 
 - Translucency only when real content scrolls underneath. Otherwise it is costume.
 - 44×44pt targets, safe-area insets, and system text scaling respected.
 
-**Not for:** expressive marketing pages. HIG is a platform language, not a brand direction. If the brief is "native / quiet / premium calm", use `direction-apple.md`; otherwise keep the chosen direction and borrow only the motion quality.
+**Not for:** expressive marketing pages. HIG is a platform language, not a brand material. If the brief is "native / quiet / premium calm", build in `themes/midnight.md` (or `themes/ink.md` for a light one); otherwise keep the chosen theme and borrow only the motion quality.
 
 ## Precedence when they conflict
 

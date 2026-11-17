@@ -1,19 +1,19 @@
 ---
 name: ui-ux
-description: Use when building or refining any UI: screens, components, layouts, landing pages, or polish passes. Chooses a named direction from reference/directions.md before designing — the Vercel look only when minimal is explicitly asked — names the page's job and the action it ends on, and audits the result against tiered Floor/Reflex checks. Not for critiquing an existing screenshot or live URL (use design-critique) or extracting tokens (use design-system).
+description: Use when building or refining any UI: screens, components, layouts, landing pages, or polish passes. Chooses a named theme from a library of 50 materials in reference/themes.md before designing, names the page's job and the action it ends on, and audits the result against tiered Floor/Reflex checks. Not for critiquing an existing screenshot or live URL (use design-critique) or extracting tokens (use design-system).
 ---
 
 # UI/UX
 
-The failure this skill exists to prevent: every landing page comes out as a centered hero, a gradient blob, three feature cards, and a pill CTA row. That is not a style, it is a default. Choose a direction on purpose.
+The failure this skill exists to prevent: every landing page comes out as a centered hero, a gradient blob, three feature cards, and a pill CTA row. That is not a style, it is a default. Choose a material on purpose.
 
 ## 1. Router
 
 | File | Open when |
 |---|---|
-| `reference/directions.md` | **Always**, before designing. Selector, how to choose, rotation and mirror test. |
+| `reference/themes.md` | **Always**, before designing. The 50-material selector, how to choose, rotation and mirror test. |
 | `reference/layout-skeletons.md` | **Always**. Name one skeleton per section. |
-| `reference/direction-<name>.md` | After choosing. Open exactly one. |
+| `reference/themes/<name>.md` | After choosing. Open exactly one. Material only — paper, ink, faces, surfaces, motion, voice. |
 | `reference/typography.md` | Choosing fonts or building the scale. |
 | `reference/color.md` | Building tokens, dark mode, contrast. |
 | `reference/anti-patterns.md` | Before writing markup, and again before shipping. |
@@ -22,31 +22,33 @@ The failure this skill exists to prevent: every landing page comes out as a cent
 
 Read only what the task needs. Do not load every file.
 
+A theme gives you the material; it never gives you the page. What the sections are, in what order, and at what size is `layout-skeletons.md` and this file.
+
 ## 2. Mode
 
-**Minimal mode** — only on an explicit request: "minimal", "Vercel style", "clean", "keep it simple", "no research". Skip research and directions. Still name the job, the action it ends on, a skeleton, a type pairing, and a signature element: minimal is a discipline, not an absence of decisions.
+**Minimal mode** — only on an explicit request: "minimal", "Vercel style", "clean", "keep it simple", "no research". Skip research and the selector. Still name the job, the action it ends on, a skeleton, a type pairing, and a signature element: minimal is a discipline, not an absence of decisions. `themes/ink.md` is the material for a page with none of its own.
 
-**Directional mode** — everything else, including silence. Pick a direction from the library, then research only to sharpen that direction (3–5 references, patterns not pixels). If a source is blocked, say so and ask for screenshots instead of guessing.
+**Themed mode** — everything else, including silence. Pick a theme from the library, then research only to sharpen it (3–5 references, patterns not pixels). If a source is blocked, say so and ask for screenshots instead of guessing.
 
-## 3. Direction contract — write it before code
+## 3. Theme contract — write it before code
 
 ```
-Direction:   <name from directions.md>
+Theme:       <name from themes.md>
 Because:     <content or audience signal, never "it looks premium">
 Job:         <what the visitor comes to do: book, buy, subscribe, hire, join>
 Ends on:     <that action, in the form the job takes>
 Skeleton:    <hero skeleton> + <section skeletons>, one per section
 Type:        <display> / <body> / <mono>
-Palette:     <dominant> + <one accent> + <neutral logic>
+Palette:     <dominant> + <one accent, or the theme's declared palette> + <neutral logic>
 Signature:   <the one memorable element>
-Not doing:   <the clichés this direction forbids>
+Not doing:   <the clichés this theme forbids>
 ```
 
 Rules:
 
 - `Job` is a verb the visitor performs, not what the page is about. Name the section where that action lives, and end the page on it. A page whose job is not subscribe, join, attend, or listen does not close with an email sign-up.
-- One direction. Two only if combined and named ("editorial × console").
-- Do not reuse the direction used earlier in this project or session. If you must, say why it is the right answer twice, not the easy one.
+- One theme. Two only if combined and named ("riso × blueprint").
+- Do not reuse the theme used earlier in this project or session. If you must, say why it is the right answer twice, not the easy one.
 - "Because" cannot be taste. It is the content: a document, a spec sheet, a price, a demo, a place.
 - If the shortlist names two, pick one and write the other under "not doing".
 
@@ -80,7 +82,7 @@ led with the real deploy log instead of a stock dashboard.
 - Default, loading, empty, and error states exist before the screen is called done.
 - Contrast checked (4.5:1 body, 3:1 large and UI), keyboard reachable, visible focus, semantic HTML.
 - Motion per the `motion` skill: one entrance, reveals on heads only, `prefers-reduced-motion` disables it.
-- One accent colour, one icon set, zero emoji.
+- One accent, or the palette the theme declares when its posture is full — never a colour the theme did not name. One icon set, zero emoji.
 - If `impeccable` or an Apple HIG / taste skill is available, use it for polish and native motion under the precedence in `reference/related-skills.md`. It never re-decides the direction.
 
 ## 5. Audit

@@ -117,7 +117,7 @@ Replace: one entrance, reveals on section heads only. Motion is punctuation, not
 Pinned sections that trap the wheel, horizontal scroll that ignores the trackpad, hidden scrollbars on long pages, custom cursor followers.
 Replace: normal scrolling with a sticky column that releases, a visible scrollbar, no cursor replacement. Never stop the user from leaving.
 
-## The same direction twice
+## The same theme twice
 
-The last page was editorial, so this one is editorial with a different accent.
-Replace: run the rotation rule in `directions.md`. Reuse is a decision with a reason, not a habit.
+The last page was `editorial`, so this one is `editorial` with a different accent.
+Replace: run the rotation and mirror test in `themes.md`. Reuse is a decision with a reason, not a habit.
