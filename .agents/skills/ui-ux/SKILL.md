@@ -50,6 +50,26 @@ Rules:
 - "Because" cannot be taste. It is the content: a document, a spec sheet, a price, a demo, a place.
 - If the shortlist names two, pick one and write the other under "not doing".
 
+## 3b. Critique the plan before markup
+
+Score the planned page 1–5 on six axes. Anything under 3 is revised before the first line of markup.
+
+| Axis | 3 | 5 |
+|---|---|---|
+| Philosophy | has a tone | has an argument a reader could disagree with |
+| Hierarchy | needs a second look | survives the squint test |
+| Execution | two or three loose details | would pass the audit first time |
+| Specificity | fits the category | could belong to no other product |
+| Restraint | keeps one decoration too many | lost something you liked |
+| Variety | differs from the last screen on three axes | shares no structure with the last three |
+
+Write the line, name the weakest axis, and state the fix you took. Never invent a weakness to fill the field.
+
+```
+Critique: P5 H4 E5 S3 R5 V4 · weakest S — the hero could be any dev tool;
+led with the real deploy log instead of a stock dashboard.
+```
+
 ## 4. Build
 
 - Hero first. Write the nav and the hero, look at it at 1280×800, and fix it before anything below it exists. A weak hero is not repaired by what comes under it.
