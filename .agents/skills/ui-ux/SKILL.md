@@ -1,6 +1,6 @@
 ---
 name: ui-ux
-description: Use when designing or reviewing any UI: screens, components, layouts, landing pages, or polish passes. Always choose a named direction from reference/directions.md before designing — the Vercel look applies only when the user explicitly asks for minimal. Ships a reference library for directions, layout skeletons, typography, color, and anti-patterns, so landing pages stop converging on the same centered-hero pattern.
+description: Use when building or refining any UI: screens, components, layouts, landing pages, or polish passes. Chooses a named direction from reference/directions.md before designing — the Vercel look only when minimal is explicitly asked — names the page's job and the action it ends on, and audits the result against tiered Floor/Reflex checks. Not for critiquing an existing screenshot or live URL (use design-critique) or extracting tokens (use design-system).
 ---
 
 # UI/UX
@@ -11,7 +11,7 @@ The failure this skill exists to prevent: every landing page comes out as a cent
 
 | File | Open when |
 |---|---|
-| `reference/directions.md` | **Always**, before designing. Selector, contract, rotation rule. |
+| `reference/directions.md` | **Always**, before designing. Selector, how to choose, rotation and mirror test. |
 | `reference/layout-skeletons.md` | **Always**. Name one skeleton per section. |
 | `reference/direction-<name>.md` | After choosing. Open exactly one. |
 | `reference/typography.md` | Choosing fonts or building the scale. |
@@ -24,7 +24,7 @@ Read only what the task needs. Do not load every file.
 
 ## 2. Mode
 
-**Minimal mode** — only on an explicit request: "minimal", "Vercel style", "clean", "keep it simple", "no research". Skip research and directions. Still name a skeleton, a type pairing, and a signature element: minimal is a discipline, not an absence of decisions.
+**Minimal mode** — only on an explicit request: "minimal", "Vercel style", "clean", "keep it simple", "no research". Skip research and directions. Still name the job, the action it ends on, a skeleton, a type pairing, and a signature element: minimal is a discipline, not an absence of decisions.
 
 **Directional mode** — everything else, including silence. Pick a direction from the library, then research only to sharpen that direction (3–5 references, patterns not pixels). If a source is blocked, say so and ask for screenshots instead of guessing.
 

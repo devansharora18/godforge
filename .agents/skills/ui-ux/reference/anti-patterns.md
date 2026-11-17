@@ -7,15 +7,10 @@ Each entry is a generated-looking default, the tell that gives it away, and what
 Centered headline → gradient blob or terminal mock → three equal feature cards → pill CTA row.
 Replace: pick a skeleton from `layout-skeletons.md`. If the hero must be centered, the media must be real and the cards must become a ledger, a diptych, or a table.
 
-## Three feature cards
+## The card tells
 
-Three icons over three titles over three identical paragraphs.
-Replace: a numbered ledger, a two-column comparison, or one feature shown at three sizes of evidence.
-
-## Icon + title + paragraph, repeated
-
-The same card anatomy for every section, differing only in copy.
-Replace: vary the anatomy by skeleton, not by adding an icon.
+Three icons over three titles over three identical paragraphs — or the same card anatomy for every section, differing only in copy.
+Replace: a numbered ledger, a two-column comparison, one feature shown at three sizes of evidence. Vary the anatomy by skeleton, never by adding an icon.
 
 ## The browser chrome mockup
 
@@ -117,15 +112,10 @@ Replace: a token remap with re-tuned neutrals and a verified contrast pass.
 Every element fades up on scroll, the nav shrinks, counters tick.
 Replace: one entrance, reveals on section heads only. Motion is punctuation, not decoration.
 
-## Scroll hijacking
+## Scroll intrusion
 
-Pinned sections that trap the wheel, horizontal scroll that ignores the trackpad.
-Replace: normal scrolling with a sticky column that releases. Never prevent the user from leaving.
-
-## Decorative scrollbar and cursor
-
-Custom cursor followers, hidden scrollbars on long pages.
-Replace: styled scrollbar that remains visible; no cursor replacement.
+Pinned sections that trap the wheel, horizontal scroll that ignores the trackpad, hidden scrollbars on long pages, custom cursor followers.
+Replace: normal scrolling with a sticky column that releases, a visible scrollbar, no cursor replacement. Never stop the user from leaving.
 
 ## The same direction twice
 

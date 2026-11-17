@@ -36,20 +36,8 @@ Do not use the same direction twice in a row for the same project, even if it wo
 - Check `docs/PROJECT.md` or the last screen you built.
 - If the project's only history is "minimal", the next screen must earn minimal explicitly or use another direction.
 - Repeating a direction is allowed only when the page is a sibling of the previous one (pricing beside landing). Say so in the contract.
-
-## Contract
-
-Write this in the response before the code, max seven lines:
-
-```
-Direction: editorial
-Because:   the product is a specification, and readers compare versions
-Skeleton:  ledger hero + asymmetric law spread + 3-step rite + full-bleed close
-Type:      Instrument Serif / Instrument Sans / JetBrains Mono
-Palette:   paper + ink + one ember accent, hairline rules
-Signature: numbered skill ledger with dotted leaders and inline frontmatter
-Not doing: cards, pill buttons, gradient atmosphere, fake logos
-```
+- Mirror test: would a neighbouring prompt in this same category get this exact combination of skeleton, type, and hero posture? If yes, change one decision and name which.
+- Three waivers on one screen mean the project has a house style, not an exception — record it and stop waiving (see `audit.md`).
 
 ## Failure test
 

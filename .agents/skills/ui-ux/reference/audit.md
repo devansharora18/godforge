@@ -69,6 +69,7 @@ A waiver with no evidence is a dismissal and the gate stays open. A waiver namin
 - F — No invented number, testimonial, logo, or case-study count. Absent proof beats false proof.
 - F — No lorem, no placeholder names, no dead links to unbuilt pages.
 - R — CTAs are verb + object.
+- R — The page ends on the job's action, not on an email sign-up the job never asked for.
 - R — Numbers are specific; no "10x" without a subject.
 - R — Errors say what happened and what to do.
 
