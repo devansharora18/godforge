@@ -29,7 +29,7 @@ edges      radius 0 · depth none · rules 1px hairline at 14% ink
 ## Range
 
 - A coordinate table: point, latitude, elevation — mono, ruled.
-- A full-width top-down photograph with two orange marks and a mono label each.
+- A full-width top-down photograph with two orange marks and a mono measurement each.
 - A three-step sequence where each step is a hairline surface.
 
 ## Motion

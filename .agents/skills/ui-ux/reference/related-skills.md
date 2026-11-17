@@ -6,11 +6,11 @@ These are optional, not dependencies. The local library must work with none of t
 
 Upstream: pbakaus/impeccable (Apache-2.0). 23 commands plus a deterministic detector.
 
-**Use it for:** mechanical polish after the direction is set — `typeset`, `colorize`, `layout`, `critique`, `polish`, `bolder` / `quieter`, `distill`, `harden`, `animate`, `clarify`, `adapt`, `optimize`, `extract`, `document`.
+**Use it for:** mechanical polish after the theme is set — `typeset`, `colorize`, `layout`, `critique`, `polish`, `bolder` / `quieter`, `distill`, `harden`, `animate`, `clarify`, `adapt`, `optimize`, `extract`, `document`.
 
-**Run its detector as an extra gate:** `npx impeccable detect` on the built page. Treat its findings as mechanical facts (spacing, contrast, type mechanics), not as a direction change.
+**Run its detector as an extra gate:** `npx impeccable detect` on the built page. Treat its findings as mechanical facts (spacing, contrast, type mechanics), not as a theme change.
 
-**Do not use it to choose a direction.** It optimizes execution; it does not know this brand's argument. A page can pass every rule and still be the same page as last time.
+**Do not use it to choose a theme.** It optimizes execution; it does not know this brand's argument. A page can pass every rule and still be the same page as last time.
 
 **If absent:** `reference/audit.md` covers the same terrain at lower resolution.
 
