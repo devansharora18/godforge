@@ -28,6 +28,8 @@ A waiver with no evidence is a dismissal and the gate stays open. A waiver namin
 
 ## Gate 2 — Layout (F/R)
 
+- F — Headline, one sentence, and the primary action are all visible at 1280×800 without scrolling.
+- R — About 80 words to a screen at 1440; the hero holds two text blocks at most before its actions.
 - R — Four or more sections use at least three different skeletons.
 - R — Adjacent sections do not share a rhythm.
 - F — No horizontal overflow at 360 (`scrollWidth === clientWidth`).

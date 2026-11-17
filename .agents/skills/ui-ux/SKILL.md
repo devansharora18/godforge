@@ -33,6 +33,8 @@ Read only what the task needs. Do not load every file.
 ```
 Direction:   <name from directions.md>
 Because:     <content or audience signal, never "it looks premium">
+Job:         <what the visitor comes to do: book, buy, subscribe, hire, join>
+Ends on:     <that action, in the form the job takes>
 Skeleton:    <hero skeleton> + <section skeletons>, one per section
 Type:        <display> / <body> / <mono>
 Palette:     <dominant> + <one accent> + <neutral logic>
@@ -42,6 +44,7 @@ Not doing:   <the clichés this direction forbids>
 
 Rules:
 
+- `Job` is a verb the visitor performs, not what the page is about. Name the section where that action lives, and end the page on it. A page whose job is not subscribe, join, attend, or listen does not close with an email sign-up.
 - One direction. Two only if combined and named ("editorial × console").
 - Do not reuse the direction used earlier in this project or session. If you must, say why it is the right answer twice, not the easy one.
 - "Because" cannot be taste. It is the content: a document, a spec sheet, a price, a demo, a place.
@@ -49,8 +52,11 @@ Rules:
 
 ## 4. Build
 
+- Hero first. Write the nav and the hero, look at it at 1280×800, and fix it before anything below it exists. A weak hero is not repaired by what comes under it.
+- The hero is the first screen and only the first screen: a headline of seven words or fewer, one sentence of twelve words or fewer, one or two actions, all visible at 1280×800 without scrolling.
+- About 80 words to a screen at 1440. Fullness comes from scale, real content, and images, never from more copy.
 - One skeleton per section; adjacent sections must not share a rhythm.
-- Real copy and realistic numbers. No lorem, no "revolutionize", no fake logos.
+- Real copy and realistic numbers. No lorem, no "revolutionize", no fake logos. A number, quote, or logo nobody supplied is absent, not invented.
 - Default, loading, empty, and error states exist before the screen is called done.
 - Contrast checked (4.5:1 body, 3:1 large and UI), keyboard reachable, visible focus, semantic HTML.
 - Motion per the `motion` skill: one entrance, reveals on heads only, `prefers-reduced-motion` disables it.
@@ -59,7 +65,7 @@ Rules:
 
 ## 5. Audit
 
-Run `reference/audit.md`. Screenshot 360 / 768 / 1440. Reject your own output if a stranger cannot name the direction in two seconds, or if any line of `reference/anti-patterns.md` still applies.
+Run `reference/audit.md`. Screenshot 360 / 768 / 1440. Every Floor finding blocks the ship; fix or waive every Reflex one on the record; answer every Finish one. Reject your own output if a stranger cannot name the direction in two seconds, or if any line of `reference/anti-patterns.md` still applies.
 
 ## Non-negotiables
 
