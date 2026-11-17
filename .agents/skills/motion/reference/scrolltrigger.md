@@ -34,7 +34,7 @@ ScrollTrigger.create({
 ```
 
 - Pin the section, never `body`.
-- One pinned scene per page, and only when the direction is `cinematic`.
+- One pinned scene per page, and only when the theme's register is Live (`dusk`, `darkroom`).
 - Mobile address-bar resize breaks `100vh`; use `dvh` and `invalidateOnRefresh`.
 - Always provide a non-pinned layout under `prefers-reduced-motion` and below `md` if pinning causes overflow.
 

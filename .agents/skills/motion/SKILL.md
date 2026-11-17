@@ -1,6 +1,6 @@
 ---
 name: motion
-description: Use when adding animation to a marketing page or app UI — GSAP timelines, ScrollTrigger, Lenis, text reveals, page transitions, reduced-motion handling, performance, and cleanup. Ships recipes and a direction-to-motion map so every page does not fade up the same way. Not for choosing the aesthetic (use ui-ux).
+description: Use when adding animation to a marketing page or app UI — GSAP timelines, ScrollTrigger, Lenis, text reveals, page transitions, reduced-motion handling, performance, and cleanup. Ships recipes and a theme-to-motion map so every page does not fade up the same way. Not for choosing the aesthetic (use ui-ux).
 ---
 
 # Motion
@@ -22,7 +22,7 @@ Motion explains a state change or a spatial relationship. Everything else is dec
 
 ## Decide the language before coding
 
-1. Take the direction from the `ui-ux` contract (`editorial`, `technical`, `apple`, …).
+1. Take the theme from the `ui-ux` contract and read its Motion line (`themes/<name>.md`).
 2. Pick one signature from `reference/motion-signatures.md` and write it down:
    `Motion: masked line rise, 600ms, power2.out`.
 3. One entrance, then reveals on section heads only. Nothing else animates.
