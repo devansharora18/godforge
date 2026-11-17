@@ -83,11 +83,11 @@ led with the real deploy log instead of a stock dashboard.
 - Contrast checked (4.5:1 body, 3:1 large and UI), keyboard reachable, visible focus, semantic HTML.
 - Motion per the `motion` skill: one entrance, reveals on heads only, `prefers-reduced-motion` disables it.
 - One accent, or the palette the theme declares when its posture is full — never a colour the theme did not name. One icon set, zero emoji.
-- If `impeccable` or an Apple HIG / taste skill is available, use it for polish and native motion under the precedence in `reference/related-skills.md`. It never re-decides the direction.
+- If `impeccable` or an Apple HIG / taste skill is available, use it for polish and native motion under the precedence in `reference/related-skills.md`. It never re-decides the theme.
 
 ## 5. Audit
 
-Run `reference/audit.md`. Screenshot 360 / 768 / 1440. Every Floor finding blocks the ship; fix or waive every Reflex one on the record; answer every Finish one. Reject your own output if a stranger cannot name the direction in two seconds, or if any line of `reference/anti-patterns.md` still applies.
+Run `reference/audit.md`. Screenshot 360 / 768 / 1440. Every Floor finding blocks the ship; fix or waive every Reflex one on the record; answer every Finish one. Reject your own output if a stranger cannot name the theme in two seconds, or if any line of `reference/anti-patterns.md` still applies.
 
 ## Non-negotiables
 

@@ -50,12 +50,12 @@ Replace: set the whole head one way, or break the line and change the size on th
 ## Pill everything
 
 Fully rounded buttons, rounded inputs, rounded cards, rounded avatars — all at the same radius.
-Replace: a radius decision per direction. Brutalist and editorial use 0; soft-product uses one radius, consistently.
+Replace: one radius per theme. `brutal`, `blueprint` and `grid` use 0; `coral` uses one radius, consistently.
 
 ## Gradient atmosphere
 
 Purple-to-blue wash, radial glow behind the hero, conic border on cards.
-Replace: one flat accent, a paper texture, a halftone, or nothing. If the direction cannot survive without a glow, the direction is weak.
+Replace: one flat accent, a paper texture, a halftone, or nothing. If the material cannot survive without a glow, the material is weak.
 
 ## Middle-dot meta strings
 

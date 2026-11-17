@@ -38,7 +38,7 @@ A skill may ship `reference/*.md`. The SKILL.md must stay the router.
 
 - Every reference file is named in SKILL.md (or in another reference) with the condition for opening it. Orphans get linked or deleted.
 - Frontmatter lives only in SKILL.md. References are plain Markdown.
-- Budget: SKILL.md ≤ 150 lines, each reference 40–120, total per skill ≈ 1,200.
+- Budget: SKILL.md ≤ 150 lines, each reference 40–120, total per skill ≈ 1,200. A catalog (50 themes, 40 templates) is the one allowed overshoot: its SKILL.md must route to exactly one item per build, and an index must list every item.
 - One rule has one owner. If SKILL.md and a reference both state it, delete the copy.
 - An external skill (impeccable, Apple HIG, a taste skill) is cited as optional, with a local fallback. The skill must work with none of them installed.
 - References describe technique, not project specifics. No secrets, no client names, no dates that rot.

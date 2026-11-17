@@ -34,11 +34,11 @@ May arrive as `apple-design`, `apple-uiux-taste`, `design-taste`, or a vendored 
 ## Precedence when they conflict
 
 1. Accessibility and the platform's conventions.
-2. The direction contract — layout, palette, type pairing.
-3. `impeccable` — mechanical polish within that direction.
+2. The theme contract — layout, palette, type pairing.
+3. `impeccable` — mechanical polish within that theme.
 4. Apple/HIG — interaction and motion when the brief is native.
 
-State the sources in the contract: `polish: impeccable`, `motion: HIG`. If two rules contradict and neither outranks the other, the direction contract decides.
+State the sources in the contract: `polish: impeccable`, `motion: HIG`. If two rules contradict and neither outranks the other, the theme contract decides.
 
 ## What not to do
 

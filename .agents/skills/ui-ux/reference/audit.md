@@ -17,14 +17,14 @@ waived G2 · adjacent sections share a rhythm · one paper band holds three comp
       gate   evidence that the rule genuinely does not hold here   why this page needs it
 ```
 
-A waiver with no evidence is a dismissal and the gate stays open. A waiver naming a Floor check is rejected. Three waivers on one screen means the direction is wrong, not the rules — change the direction instead of writing a fourth.
+A waiver with no evidence is a dismissal and the gate stays open. A waiver naming a Floor check is rejected. Three waivers on one screen means the theme is wrong, not the rules — change the theme instead of writing a fourth.
 
-## Gate 1 — Direction (F/R)
+## Gate 1 — Theme and direction (F/R)
 
-- F — The contract's direction matches what was actually built, or the change is named in the output.
+- F — The contract's theme matches what was actually built, or the change is named in the output.
 - R — Stranger test: ask for three words. "Clean, modern, minimal" — or any synonym — is a fail.
 - R — The default quartet is absent: no centered hero, no gradient blob, no three equal cards, no pill row.
-- R — Not the direction used on the previous screen in this project, unless the contract explains why.
+- R — Not the theme used on the previous screen in this project, unless the contract explains why.
 
 ## Gate 2 — Layout (F/R)
 
@@ -97,11 +97,11 @@ Blocker
   Fix: grid-cols-[1fr_auto].
 
 High
-- Direction: reads as "clean SaaS"; three equal cards in section 3.
+- Theme: reads as "clean SaaS"; three equal cards in section 3.
   Fix: replace with ledger skeleton, keep the palette.
 
 Keep
-- The palette and type pairing carry the direction; do not change them during fixes.
+- The palette and type pairing carry the theme; do not change them during fixes.
 ```
 
 Fix every Floor finding. Fix or waive every Reflex one. Answer every Finish one. A verdict that claims a clean pass without the counts is itself the failure this file exists to catch.

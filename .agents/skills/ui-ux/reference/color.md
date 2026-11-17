@@ -9,7 +9,7 @@ The convergence tells are specific: purple-to-blue gradients, warm-cream "editor
 - **Full palette** — three or four named roles used deliberately. Campaigns, data.
 - **Drenched** — the surface is the colour. Launch pages, cinema scenes.
 
-Write the tier in the direction contract. "Neutral plus accent" is not a decision until the tier is named.
+Write the tier in the theme contract. "Neutral plus accent" is not a decision until the tier is named.
 
 ## Build the palette
 
