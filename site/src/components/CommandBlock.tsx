@@ -10,15 +10,8 @@ const breakable = (command: string) =>
     </span>
   ))
 
-export function CommandBlock({
-  command,
-  label = 'Copy command',
-  inverse = false,
-}: {
-  command: string
-  label?: string
-  inverse?: boolean
-}) {
+/** A bare row. The caller supplies the frame (see Tablet). */
+export function CommandBlock({ command, label = 'Copy command' }: { command: string; label?: string }) {
   const [copied, setCopied] = useState(false)
   const timer = useRef<number>()
 
@@ -36,27 +29,25 @@ export function CommandBlock({
   }
 
   return (
-    <div className={`flex items-stretch border ${inverse ? 'border-term-fg/25 bg-white/[0.04]' : 'border-rule bg-raise'}`}>
-      <code
-        className={`min-w-0 flex-1 break-words px-4 py-3.5 font-mono text-[12.5px] leading-6 ${inverse ? 'text-term-fg' : 'text-ink'}`}
-      >
-        <span aria-hidden="true" className="mr-2 select-none text-ember">$</span>
+    <div className="flex flex-col items-stretch sm:flex-row">
+      <code className="min-w-0 flex-1 break-words px-4 py-3.5 font-mono text-[11.5px] leading-6 text-ink sm:text-[12.5px]">
+        <span aria-hidden="true" className="mr-2 select-none text-brass">
+          $
+        </span>
         {breakable(command)}
       </code>
       <button
         type="button"
         onClick={copy}
         aria-label={label}
-        className={`flex shrink-0 items-center gap-2 border-l px-3 font-mono text-[10.5px] uppercase tracking-label transition-colors sm:px-4 ${
-          inverse
-            ? 'border-term-fg/25 text-term-fg/70 hover:bg-white/10 hover:text-term-fg'
-            : 'border-rule text-soft hover:bg-paper hover:text-ink'
-        }`}
+        className="flex shrink-0 items-center justify-center gap-2 border-t border-rule px-4 py-2.5 text-soft transition-colors hover:bg-ground hover:text-brass sm:border-l sm:border-t-0 sm:py-0"
       >
-        {copied ? <Check className="h-3.5 w-3.5 text-ember" /> : <Copy className="h-3.5 w-3.5" />}
-        <span className="hidden sm:inline">{copied ? 'Copied' : 'Copy'}</span>
+        {copied ? <Check className="h-3.5 w-3.5 text-brass" /> : <Copy className="h-3.5 w-3.5" />}
+        <span className="text-[13px]">{copied ? 'Copied' : 'Copy'}</span>
       </button>
-      <span aria-live="polite" className="sr-only">{copied ? 'Command copied to clipboard' : ''}</span>
+      <span aria-live="polite" className="sr-only">
+        {copied ? 'Command copied to clipboard' : ''}
+      </span>
     </div>
   )
 }

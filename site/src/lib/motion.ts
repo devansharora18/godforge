@@ -1,13 +1,10 @@
 import { useEffect } from 'react'
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-gsap.registerPlugin(ScrollTrigger)
 
 /**
- * One entrance for the hero, then reveals on section heads only.
- * Skipped entirely under prefers-reduced-motion, which leaves the
- * content in its natural, fully visible state.
+ * Empyrean register: a plaque does not move. One 300ms opacity fade on
+ * the hero, no translation, and nothing below the fold ever waits for
+ * a scroll trigger. Under prefers-reduced-motion nothing runs.
  */
 export function usePageMotion() {
   useEffect(() => {
@@ -15,25 +12,13 @@ export function usePageMotion() {
 
     const ctx = gsap.context(() => {
       gsap.from('[data-hero]', {
-        y: 18,
         opacity: 0,
-        duration: 0.9,
-        stagger: 0.07,
-        ease: 'power3.out',
-      })
-
-      gsap.utils.toArray<HTMLElement>('[data-reveal]').forEach((el) => {
-        gsap.from(el, {
-          y: 24,
-          opacity: 0,
-          duration: 0.7,
-          ease: 'power2.out',
-          scrollTrigger: { trigger: el, start: 'top 88%', once: true },
-        })
+        duration: 0.3,
+        stagger: 0.05,
+        ease: 'power1.out',
       })
     })
 
-    document.fonts.ready.then(() => ScrollTrigger.refresh())
     return () => ctx.revert()
   }, [])
 }

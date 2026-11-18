@@ -2,60 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── tokens ─────────────────────────────────────────── */
+/* ── tokens ─────────────────────────────────────────────────────────────
+   Empyrean: smoked umber-black ground, bone ink, brass rules as the only
+   metal, one band of full bone light. No blue anywhere; the warmth is what
+   lets the brass read as gold instead of as contrast on a navy field. Default is the dark rendering;
+   `.dark` is added by the boot script unless the system asks for light.
+
+   Dark  ratios: ink 17.1 · soft 8.9 · brass 9.8 · brass-ink on brass 9.4
+                 band-fg on band 15.8 · band-soft on band 6.3
+   Light ratios: ink 15.7 · soft 6.4 · brass 4.8 · brass-ink on brass 5.3
+                 band-fg on band 16.5 · band-soft on band 9.5
+   ──────────────────────────────────────────────────────────────────── */
 :root {
-  --paper: 244 240 231; /* #f4f0e7 */
-  --raise: 237 232 220;
-  --ink: 22 19 15;
-  --soft: 74 68 58;
-  --rule: 208 199 184;
-  --ember: 166 58 12;
-  --term: 24 20 17;
-  --term-fg: 232 226 213;
+  --ground: 243 238 228;
+  --surface: 251 248 242;
+  --ink: 26 21 17;
+  --soft: 91 84 79;
+  --rule: 194 189 180;
+  --brass: 132 99 5;
+  --brass-ink: 250 248 244;
+  --band: 16 10 6;
+  --band-fg: 243 238 228;
+  --band-soft: 189 182 171;
 }
 
 .dark {
-  --paper: 12 11 9;
-  --raise: 20 18 15;
-  --ink: 241 236 225;
-  --soft: 158 150 135;
-  --rule: 47 42 36;
-  --ember: 255 122 69;
-  --term: 25 22 18;
-  --term-fg: 226 220 207;
+  --ground: 14 9 6;
+  --surface: 25 18 14;
+  --ink: 243 238 228;
+  --soft: 182 172 160;
+  --rule: 59 52 47;
+  --brass: 216 178 96;
+  --brass-ink: 23 17 5;
+  --band: 240 234 225;
+  --band-fg: 15 10 7;
+  --band-soft: 92 83 78;
 }
 
-/* ── base ───────────────────────────────────────────── */
+/* ── base ─────────────────────────────────────────────────────────────── */
 @layer base {
   html {
-    scroll-behavior: smooth;
     scroll-padding-top: 5rem;
     -webkit-text-size-adjust: 100%;
   }
 
   body {
-    @apply bg-paper text-ink font-sans antialiased;
-    font-variant-ligatures: common-ligatures;
+    @apply bg-ground text-ink font-sans antialiased;
+    font-size: 16.5px;
+    line-height: 1.65;
   }
 
-  /* faint print grain — keeps the paper from looking like flat hex */
-  body::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: 60;
-    pointer-events: none;
-    opacity: 0.035;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  h1,
+  h2 {
+    @apply font-display;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  h3 {
+    @apply font-sans;
+    font-weight: 500;
   }
 
   ::selection {
-    background: rgb(var(--ember));
-    color: rgb(var(--paper));
+    background: rgb(var(--brass));
+    color: rgb(var(--brass-ink));
   }
 
+  /* Brass is metal: it is allowed to carry the focus ring. 9.8:1 on the ground. */
   :focus-visible {
-    outline: 2px solid rgb(var(--ink));
+    outline: 2px solid rgb(var(--brass));
     outline-offset: 3px;
   }
 
@@ -67,15 +83,17 @@
 }
 
 @layer utilities {
+  /* A label is the body face a step smaller, sentence case, untracked. */
   .label {
-    @apply font-mono text-[11px] uppercase tracking-label text-soft;
+    @apply font-sans text-[13px] leading-5 text-soft;
   }
 
+  /* Dotted leader between a name and its folio. */
   .leader {
     flex: 1 1 auto;
     min-width: 1.5rem;
     height: 1px;
-    margin-bottom: 0.32em;
+    margin-bottom: 0.34em;
     border-bottom: 1px dotted rgb(var(--rule));
   }
 

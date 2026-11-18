@@ -21,6 +21,7 @@ Pick before you draw. **A theme is a material, nothing else** — paper, ink, fa
 | `dose` | a routine, medication, daily care | translucent tinted panel over the paper | saturated colour, sharp corners |
 | `dusk` | software at the end of a day | a real dusk landscape behind the hero | gradient skies, glow, illustrations |
 | `editorial` | a document, a story, a publication | the 6px rule / hairline / text ladder | cards, pills, gradients |
+| `empyrean` | a system with weight, a launch, an argument | the tablet: one command in a double brass frame | glow, halos, gold fills, radius, Cinzel under 32px |
 | `formwork` | construction, hardware, an industrial product | cast edge with a 3px unblurred shadow | rounded corners, colour photographs |
 | `furrow` | farming, land, field records | a survey map drawn from real data | soft shadows, saturated photography |
 | `garden` | growing, seasons, food, a garden | old-style figures at display size | dark grounds, mono labels |

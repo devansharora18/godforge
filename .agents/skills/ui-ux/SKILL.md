@@ -1,6 +1,6 @@
 ---
 name: ui-ux
-description: Use when building or refining any UI: screens, components, layouts, landing pages, or polish passes. Chooses a named theme from a library of 50 materials in reference/themes.md before designing, names the page's job and the action it ends on, and audits the result against tiered Floor/Reflex checks. Not for critiquing an existing screenshot or live URL (use design-critique) or extracting tokens (use design-system).
+description: Use when building or refining any UI: screens, components, layouts, landing pages, or polish passes. Chooses a named theme from a library of 51 materials in reference/themes.md before designing, names the page's job and the action it ends on, and audits the result against tiered Floor/Reflex checks. Not for critiquing an existing screenshot or live URL (use design-critique) or extracting tokens (use design-system).
 ---
 
 # UI/UX
@@ -11,7 +11,7 @@ The failure this skill exists to prevent: every landing page comes out as a cent
 
 | File | Open when |
 |---|---|
-| `reference/themes.md` | **Always**, before designing. The 50-material selector, how to choose, rotation and mirror test. |
+| `reference/themes.md` | **Always**, before designing. The 51-material selector, how to choose, rotation and mirror test. |
 | `reference/layout-skeletons.md` | **Always**. Name one skeleton per section. |
 | `reference/themes/<name>.md` | After choosing. Open exactly one. Material only — paper, ink, faces, surfaces, motion, voice. |
 | `reference/typography.md` | Choosing fonts or building the scale. |

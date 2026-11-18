@@ -2,7 +2,7 @@
 
 ## 2025-11 — the ui-ux direction library became a theme library
 
-**Decision.** The 11 `reference/direction-*.md` files are retired. `reference/themes/` holds 50 themes and `reference/themes.md` is the selector.
+**Decision.** The 11 `reference/direction-*.md` files are retired. `reference/themes/` holds the theme library (51 themes as of the empyrean addition below) and `reference/themes.md` is the selector.
 
 **Why.** Two failures in the old library. Seven of the eleven files prescribed what the skill now bans on sight — `direction-editorial.md` opened with `eyebrow · mono` and asked for `mono, 10–11px, uppercase, 0.18em tracking`, which is the eyebrow rule, the tracked-caps rule and the mono-as-costume rule in one line. And the skeleton layer was owned twice: each direction file shipped an ASCII skeleton while `layout-skeletons.md` already owned twelve named ones.
 
@@ -23,3 +23,11 @@
 **Why.** The budget exists so an agent does not read the whole skill. That still holds: the router sends a build to one theme file, and `themes.md` indexes all 50.
 
 **Consequence.** The exception is recorded in `skill-audit` § 5, and it requires two things of a catalog: SKILL.md routes to exactly one item per build, and the index lists every item. `ui-ux` does both; a check comparing the selector against the folder reports 50 for 50.
+
+## 2025-11 — empyrean added as the fifty-first theme
+
+**Decision.** A new material, `reference/themes/empyrean.md`: smoked umber-black ground, bone ink, Cinzel capital inscriptions over Work Sans, brass rules as the only metal, and one band of full bone light.
+
+**Why.** A heavenly, monumental brief had no honest match in the 50. `lumen` was the nearest (brass on violet-black) but its display face is Instrument Serif, the face the page it was replacing already used, and `kiln` carries a heat ramp whose signature has no meaning on a page about Markdown.
+
+**Consequence.** The selector, the skill description, `AGENTS.md`, `README.md` and the landing page's content file all state 51. Any future count must change in those five places together.

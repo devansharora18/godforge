@@ -27,7 +27,7 @@ export const skills: Skill[] = [
   {
     name: 'ui-ux',
     group: 'Core',
-    summary: 'Fifty themes, layout skeletons, type, color, tiered audit.',
+    summary: 'Fifty-one themes, layout skeletons, type, color, tiered audit.',
     summoned: 'Designing or reviewing a screen, a component, or a polish pass.',
   },
   {
@@ -303,7 +303,7 @@ export const rules = [
 export const rite = [
   {
     numeral: '01',
-    title: 'Install the law',
+    title: 'Install the files',
     body: 'One curl pipe copies AGENTS.md and every skill into the repo. Re-run the same command to update them.',
   },
   {

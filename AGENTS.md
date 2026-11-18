@@ -103,7 +103,7 @@ A skill may ship a `reference/` folder. `SKILL.md` is the router: open only the 
 | Skill | Use when |
 |---|---|
 | `architecture` | Starting a new project/module, or restructuring — folder structure, layering, file-size discipline. |
-| `ui-ux` | Designing or reviewing any UI — a theme from the 50-material library, layout skeletons, typography, spacing, color tokens, states, accessibility. |
+| `ui-ux` | Designing or reviewing any UI — a theme from the 51-material library, layout skeletons, typography, spacing, color tokens, states, accessibility. |
 | `frontend` | Writing frontend code — Vite/Next.js, TypeScript, Tailwind, component and state conventions. |
 | `backend` | Writing server/API/DB code — stack evaluation, Postgres + FastAPI, security. |
 | `docs` | Documentation — informal understanding or formal backend/architecture docs. Markdown first. |
